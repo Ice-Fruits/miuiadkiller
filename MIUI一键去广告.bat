@@ -146,8 +146,16 @@ adb shell pm uninstall --user 0 com.mfashiongallery.emag
 adb shell pm uninstall --user 0 com.mi.health
 adb shell pm uninstall --user 0 com.xiaomi.vipaccount
 adb shell pm uninstall --user 0 com.miui.miservice
+::用户反馈
 adb shell pm uninstall --user 0 com.miui.bugreport
 adb shell pm uninstall --user 0 com.xiaomi.ab
+::快应用服务框架
+adb shell pm uninstall --user 0 com.miui.hybrid
+::智能助理（负一屏）（直接卸载，自己不使用）
+adb shell pm uninstall --user 0 com.miui.personalassistant
+::小米广告分析
+adb shell pm uninstall --user 0 com.miui.analytics
+
 echo.
 echo ==================================================
 echo.
