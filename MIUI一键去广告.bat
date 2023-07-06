@@ -43,7 +43,7 @@ ECHO  MIUI ÔÚºÜ¶àµØ·½¼ÓÁË¹ã¸æ(±ÈÈçÈí¼şÆô¶¯Ê±£¬±ÈÈç×÷Òµ°ï)£¬ÓĞĞ©ÊÇ¿ÉÒÔ¹Ø±ÕµÄ£¬µ«Ó
 echo.
 echo  ¹Ø±Õ²»ÁËµÄ¹ã¸æ´ó²¿·ÖÊÇmsaÍÆËÍµÄ£¬Òò´ËÎÒÃÇ°ÑËüÉ¾µô¡£
 echo.
-echo  ×¢Òâ£ºÄ¿Ç°(2018.6.29)»¹Ã»ÓĞÉ¾³ıÒÔºó¿¨Ã×ÏÖÏó£¬²»±£Ö¤ÒÔºóÃ»ÓĞ¡£
+echo  ×¢Òâ£ºÄ¿Ç°(2023.2.23)»¹Ã»ÓĞÉ¾³ıÒÔºó¿¨Ã×ÏÖÏó£¬²»±£Ö¤ÒÔºóÃ»ÓĞ¡£
 ECHO.
 ECHO. Ê×ÏÈÎÒÃÇĞèÒªÖØÆôadb·şÎñ
 ECHO.
@@ -155,6 +155,12 @@ adb shell pm uninstall --user 0 com.miui.hybrid
 adb shell pm uninstall --user 0 com.miui.personalassistant
 ::Ğ¡Ã×¹ã¸æ·ÖÎö
 adb shell pm uninstall --user 0 com.miui.analytics
+::Ğ¡°®½¨Òé
+adb shell pm uninstall --user 0 com.xiaomi.aireco
+::Ğ¡°®Í¬Ñ§
+adb shell pm uninstall --user 0 com.miui.voiceassist
+::Ğ¡°®·­Òë
+adb shell pm uninstall --user 0 com.xiaomi.aiasst.vision
 
 echo.
 echo ==================================================
