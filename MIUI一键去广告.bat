@@ -139,8 +139,8 @@ adb shell pm uninstall --user 0 com.miui.player
 adb shell pm uninstall --user 0 com.xiaomi.gamecenter
 ::内容中心
 adb shell pm uninstall --user 0 com.miui.newhome
-::万象息屏
-adb shell pm uninstall --user 0 com.miui.aod
+::万象息屏（这个没有，屏下指纹无法锁屏解锁，侧边解锁的可以去除这个）
+::adb shell pm uninstall --user 0 com.miui.aod
 adb shell pm uninstall --user 0 com.mfashiongallery.emag
 ::小米健康
 adb shell pm uninstall --user 0 com.mi.health
