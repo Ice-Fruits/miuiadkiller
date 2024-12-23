@@ -1,5 +1,5 @@
 @echo off
-title MIUIÖÕ¼«È¥¹ã¸æÖ®ÃârootÐ¶ÔØ/¶³½á
+title MIUIç»ˆæžåŽ»å¹¿å‘Šä¹‹å…rootå¸è½½/å†»ç»“
 color 2f
 mode con lines=30 cols=68
 REM ________________________________________________________________
@@ -8,7 +8,7 @@ REM ________________________________________________________________
 
 if '%errorlevel%' NEQ '0' (
 
-    echo ÇëÇó¹ÜÀíÔ±È¨ÏÞ...
+    echo è¯·æ±‚ç®¡ç†å‘˜æƒé™...
 
     goto UACPrompt
 
@@ -34,27 +34,27 @@ REM ________________________________________________________________
 
 
 :A
-Rem É¾³ýÁÙÊ±ÎÄ¼þ
+Rem åˆ é™¤ä¸´æ—¶æ–‡ä»¶
 del %TempFile_Name% 1>nul 2>nul
 CLS
 cd /d %~dp0
 ECHO. ==============================================================
-ECHO  MIUI ÔÚºÜ¶àµØ·½¼ÓÁË¹ã¸æ(±ÈÈçÈí¼þÆô¶¯Ê±£¬±ÈÈç×÷Òµ°ï)£¬ÓÐÐ©ÊÇ¿ÉÒÔ¹Ø±ÕµÄ£¬µ«ÓÐÐ©²»ÄÜ¡£
+ECHO  MIUI åœ¨å¾ˆå¤šåœ°æ–¹åŠ äº†å¹¿å‘Š(æ¯”å¦‚è½¯ä»¶å¯åŠ¨æ—¶ï¼Œæ¯”å¦‚ä½œä¸šå¸®)ï¼Œæœ‰äº›æ˜¯å¯ä»¥å…³é—­çš„ï¼Œä½†æœ‰äº›ä¸èƒ½ã€‚
 echo.
-echo  ¹Ø±Õ²»ÁËµÄ¹ã¸æ´ó²¿·ÖÊÇmsaÍÆËÍµÄ£¬Òò´ËÎÒÃÇ°ÑËüÉ¾µô¡£
+echo  å…³é—­ä¸äº†çš„å¹¿å‘Šå¤§éƒ¨åˆ†æ˜¯msaæŽ¨é€çš„ï¼Œå› æ­¤æˆ‘ä»¬æŠŠå®ƒåˆ æŽ‰ã€‚
 echo.
-echo  ×¢Òâ£ºÄ¿Ç°(2023.7.6)»¹Ã»ÓÐÉ¾³ýÒÔºó¿¨Ã×ÏÖÏó£¬²»±£Ö¤ÒÔºóÃ»ÓÐ¡£
+echo  æ³¨æ„ï¼šç›®å‰(2023.7.6)è¿˜æ²¡æœ‰åˆ é™¤ä»¥åŽå¡ç±³çŽ°è±¡ï¼Œä¸ä¿è¯ä»¥åŽæ²¡æœ‰ã€‚
 ECHO.
-ECHO. Ê×ÏÈÎÒÃÇÐèÒªÖØÆôadb·þÎñ
+ECHO. é¦–å…ˆæˆ‘ä»¬éœ€è¦é‡å¯adbæœåŠ¡
 ECHO.
-ECHO. ÇëÍË³öÊÖ»úÖúÊÖÀàÈí¼þ£¬È»ºó°´ÈÎÒâ¼ü¼ÌÐø
+ECHO. è¯·é€€å‡ºæ‰‹æœºåŠ©æ‰‹ç±»è½¯ä»¶ï¼Œç„¶åŽæŒ‰ä»»æ„é”®ç»§ç»­
 ECHO. ==============================================================
 ECHO.
 PAUSE>NUL
 cls
 ECHO. ====================================================
 ECHO.
-ECHO. ÕýÔÚ³¢ÊÔÖØÆôADB·þÎñ~
+ECHO. æ­£åœ¨å°è¯•é‡å¯ADBæœåŠ¡~
 ECHO.
 ECHO. ====================================================
 ECHO.
@@ -66,11 +66,11 @@ cls
 ECHO.
 ECHO  ==============================================================
 ECHO.
-echo  ÖØÆô·þÎñÍê±Ï£¬ÇëÈ·±£ÏÂ·½Éè±¸ÁÐ±íÖÐÓÐÄãµÄÉè±¸¡£°´ÈÎÒâ¼ü¼ÌÐø¡­¡­
+echo  é‡å¯æœåŠ¡å®Œæ¯•ï¼Œè¯·ç¡®ä¿ä¸‹æ–¹è®¾å¤‡åˆ—è¡¨ä¸­æœ‰ä½ çš„è®¾å¤‡ã€‚æŒ‰ä»»æ„é”®ç»§ç»­â€¦â€¦
 ECHO.
 ECHO  ==============================================================
 ECHO.
-echo Éè±¸ÁÐ±í£º
+echo è®¾å¤‡åˆ—è¡¨ï¼š
 adb devices
 echo.
 PAUSE >nul
@@ -79,15 +79,15 @@ PAUSE >nul
 cls
 color 3f
 ECHO.
-ECHO  ==========Ñ¡ÔñÄãµÄMIUIÏµÍ³ÀàÐÍ,ÊäÈë¶ÔÓ¦Êý×Ö²¢»Ø³µ=============
+ECHO  ==========é€‰æ‹©ä½ çš„MIUIç³»ç»Ÿç±»åž‹,è¾“å…¥å¯¹åº”æ•°å­—å¹¶å›žè½¦=============
 ECHO.
-echo             1. ¹úÄÚ°æ±¾MIUI
-echo             2. ¹ú¼Ê°æ±¾MIUI
+echo             1. å›½å†…ç‰ˆæœ¬MIUI
+echo             2. å›½é™…ç‰ˆæœ¬MIUI
 ECHO.
 ECHO  ==============================================================
 ECHO.
 set value1=
-set /p value1= Ñ¡Ôñ:
+set /p value1= é€‰æ‹©:
 echo.
 IF /I "%value1%"=="1" GOTO home
 IF /I "%value1%"=="2" GOTO abroad
@@ -95,7 +95,7 @@ cls
 color cf
 echo.
 echo.
-echo Ñ¡ÔñÎÞÐ§£¬ÇëÖØÐÂÊäÈë
+echo é€‰æ‹©æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥
 echo.
 ping 127.0.0.1 /n 3 >nul
 goto if1
@@ -104,22 +104,22 @@ goto if1
 cls
 color 3f
 ECHO.
-ECHO  ============Ñ¡ÔñÄãÒªÖ´ÐÐµÄ²Ù×÷,ÊäÈë¶ÔÓ¦Êý×Ö²¢»Ø³µ==============
+ECHO  ============é€‰æ‹©ä½ è¦æ‰§è¡Œçš„æ“ä½œ,è¾“å…¥å¯¹åº”æ•°å­—å¹¶å›žè½¦==============
 ECHO.
-echo             1. Ð¶ÔØ¹ã¸æ (¸ü³¹µ×)
-echo             2. ¶³½á¹ã¸æ (¸ü°²È«)
+echo             1. å¸è½½å¹¿å‘Š (æ›´å½»åº•)
+echo             2. å†»ç»“å¹¿å‘Š (æ›´å®‰å…¨)
 ECHO.
 ECHO  ==============================================================
 ECHO.
 set value2=
-set /p value2= Ñ¡Ôñ:
+set /p value2= é€‰æ‹©:
 IF /I "%value2%"=="1" GOTO homeuninstall
 IF /I "%value2%"=="2" GOTO homedisable
 cls
 color cf
 echo.
 echo.
-echo Ñ¡ÔñÎÞÐ§£¬ÇëÖØÐÂÊäÈë
+echo é€‰æ‹©æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥
 echo.
 ping 127.0.0.1 /n 3 >nul
 goto home
@@ -129,50 +129,51 @@ cls
 color 3f
 echo.
 echo.
-echo ====================ÃüÁîÖ´ÐÐ½á¹û==================
+echo ====================å‘½ä»¤æ‰§è¡Œç»“æžœ==================
 echo.
-::Íò¶ñµÄmsa
+::ä¸‡æ¶çš„msa
 adb shell pm uninstall --user 0 com.miui.systemAdSolution
-::ÒôÀÖ
+::éŸ³ä¹
 adb shell pm uninstall --user 0 com.miui.player
-::ÓÎÏ·ÖÐÐÄ
+::æ¸¸æˆä¸­å¿ƒ
 adb shell pm uninstall --user 0 com.xiaomi.gamecenter
-::ÄÚÈÝÖÐÐÄ
+::å†…å®¹ä¸­å¿ƒ
 adb shell pm uninstall --user 0 com.miui.newhome
-::ÍòÏóÏ¢ÆÁ£¨Õâ¸öÃ»ÓÐ£¬ÆÁÏÂÖ¸ÎÆÎÞ·¨ËøÆÁ½âËø£¬²à±ß½âËøµÄ¿ÉÒÔÈ¥³ýÕâ¸ö£©
+::ä¸‡è±¡æ¯å±ï¼ˆè¿™ä¸ªæ²¡æœ‰ï¼Œå±ä¸‹æŒ‡çº¹æ— æ³•é”å±è§£é”ï¼Œä¾§è¾¹è§£é”çš„å¯ä»¥åŽ»é™¤è¿™ä¸ªï¼‰
 ::adb shell pm uninstall --user 0 com.miui.aod
 adb shell pm uninstall --user 0 com.mfashiongallery.emag
-::Ð¡Ã×½¡¿µ
+::å°ç±³å¥åº·
 adb shell pm uninstall --user 0 com.mi.health
-adb shell pm uninstall --user 0 com.xiaomi.vipaccount
 adb shell pm uninstall --user 0 com.miui.miservice
-::ÓÃ»§·´À¡
+::ç”¨æˆ·åé¦ˆ
 adb shell pm uninstall --user 0 com.miui.bugreport
 adb shell pm uninstall --user 0 com.xiaomi.ab
-::¿ìÓ¦ÓÃ·þÎñ¿ò¼Ü
+::å¿«åº”ç”¨æœåŠ¡æ¡†æž¶
 adb shell pm uninstall --user 0 com.miui.hybrid
-::ÖÇÄÜÖúÀí£¨¸ºÒ»ÆÁ£©£¨Ö±½ÓÐ¶ÔØ£¬×Ô¼º²»Ê¹ÓÃ£©
+::æ™ºèƒ½åŠ©ç†ï¼ˆè´Ÿä¸€å±ï¼‰ï¼ˆç›´æŽ¥å¸è½½ï¼Œè‡ªå·±ä¸ä½¿ç”¨ï¼‰
 adb shell pm uninstall --user 0 com.miui.personalassistant
-::Ð¡Ã×¹ã¸æ·ÖÎö
+::å°ç±³å¹¿å‘Šåˆ†æž
 adb shell pm uninstall --user 0 com.miui.analytics
-::Ð¡°®½¨Òé
+::å°çˆ±å»ºè®®
 adb shell pm uninstall --user 0 com.xiaomi.aireco
-::Ð¡°®Í¬Ñ§
+::å°çˆ±åŒå­¦
 adb shell pm uninstall --user 0 com.miui.voiceassist
-::Ð¡°®·­Òë
+::å°çˆ±ç¿»è¯‘
 adb shell pm uninstall --user 0 com.xiaomi.aiasst.vision
-::ÓïÒô»½ÐÑ
+::è¯­éŸ³å”¤é†’
 adb shell pm uninstall --user 0 com.miui.voicetrigger
+::ä¸‰æ–¹åº”ç”¨å¼‚å¸¸åˆ†æž
+adb shell pm uninstall --user 0 com.miui.thirdappassistant
 
 echo.
 echo ==================================================
 echo.
 echo.
-echo Èç¹û¿´¼û Success ×ÖÑù¼´Îª³É¹¦¡£
+echo å¦‚æžœçœ‹è§ Success å­—æ ·å³ä¸ºæˆåŠŸã€‚
 echo.
-echo È»ºó¾¡ÇéÏíÊÜ°É~£¨ÍòÄÜÒ£¿ØÐ§¹ûÃ÷ÏÔ£©
+echo ç„¶åŽå°½æƒ…äº«å—å§~ï¼ˆä¸‡èƒ½é¥æŽ§æ•ˆæžœæ˜Žæ˜¾ï¼‰
 echo.
-echo °´ÏÂÈÎÒâ¼üÍË³ö
+echo æŒ‰ä¸‹ä»»æ„é”®é€€å‡º
 pause>nul
 exit
 
@@ -181,7 +182,7 @@ cls
 color 3f
 echo.
 echo.
-echo ====================ÃüÁîÖ´ÐÐ½á¹û==================
+echo ====================å‘½ä»¤æ‰§è¡Œç»“æžœ==================
 echo.
 adb shell pm disable-user --user 0 com.miui.systemAdSolution
 adb shell pm disable-user --user 0 com.miui.player
@@ -192,11 +193,11 @@ echo.
 echo ==================================================
 echo.
 echo.
-echo Èç¹û¿´¼û new state: disabled-user ×ÖÑù¼´Îª³É¹¦¡£
+echo å¦‚æžœçœ‹è§ new state: disabled-user å­—æ ·å³ä¸ºæˆåŠŸã€‚
 echo.
-echo È»ºó¾¡ÇéÏíÊÜ°É~£¨ÍòÄÜÒ£¿ØÐ§¹ûÃ÷ÏÔ£©
+echo ç„¶åŽå°½æƒ…äº«å—å§~ï¼ˆä¸‡èƒ½é¥æŽ§æ•ˆæžœæ˜Žæ˜¾ï¼‰
 echo.
-echo °´ÏÂÈÎÒâ¼üÍË³ö
+echo æŒ‰ä¸‹ä»»æ„é”®é€€å‡º
 pause>nul
 exit
 
@@ -204,22 +205,22 @@ exit
 cls
 color 3f
 ECHO.
-ECHO  ============Ñ¡ÔñÄãÒªÖ´ÐÐµÄ²Ù×÷,ÊäÈë¶ÔÓ¦Êý×Ö²¢»Ø³µ==============
+ECHO  ============é€‰æ‹©ä½ è¦æ‰§è¡Œçš„æ“ä½œ,è¾“å…¥å¯¹åº”æ•°å­—å¹¶å›žè½¦==============
 ECHO.
-echo             1. Ð¶ÔØmsa (¸ü³¹µ×)
-echo             2. ¶³½ámsa (¸ü°²È«)
+echo             1. å¸è½½msa (æ›´å½»åº•)
+echo             2. å†»ç»“msa (æ›´å®‰å…¨)
 ECHO.
 ECHO  ==============================================================
 ECHO.
 set value3=
-set /p value3= Ñ¡Ôñ:
+set /p value3= é€‰æ‹©:
 IF /I "%value3%"=="1" GOTO abroaduninstall
 IF /I "%value3%"=="2" GOTO abroaddisable
 cls
 color cf
 echo.
 echo.
-echo Ñ¡ÔñÎÞÐ§£¬ÇëÖØÐÂÊäÈë
+echo é€‰æ‹©æ— æ•ˆï¼Œè¯·é‡æ–°è¾“å…¥
 echo.
 ping 127.0.0.1 /n 3 >nul
 goto abroad
@@ -229,18 +230,18 @@ cls
 color 3f
 echo.
 echo.
-echo ====================ÃüÁîÖ´ÐÐ½á¹û==================
+echo ====================å‘½ä»¤æ‰§è¡Œç»“æžœ==================
 echo.
 adb shell pm uninstall --user 0 com.miui.msa.global
 echo.
 echo ==================================================
 echo.
 echo.
-echo Èç¹û¿´¼û Success ×ÖÑù¼´Îª³É¹¦¡£
+echo å¦‚æžœçœ‹è§ Success å­—æ ·å³ä¸ºæˆåŠŸã€‚
 echo.
-echo È»ºó¾¡ÇéÏíÊÜ°É~£¨ÍòÄÜÒ£¿ØÐ§¹ûÃ÷ÏÔ£©
+echo ç„¶åŽå°½æƒ…äº«å—å§~ï¼ˆä¸‡èƒ½é¥æŽ§æ•ˆæžœæ˜Žæ˜¾ï¼‰
 echo.
-echo °´ÏÂÈÎÒâ¼üÍË³ö
+echo æŒ‰ä¸‹ä»»æ„é”®é€€å‡º
 pause>nul
 exit
 
@@ -249,17 +250,17 @@ cls
 color 3f
 echo.
 echo.
-echo ====================ÃüÁîÖ´ÐÐ½á¹û==================
+echo ====================å‘½ä»¤æ‰§è¡Œç»“æžœ==================
 echo.
 adb shell pm disable-user --user 0 com.miui.msa.global
 echo.
 echo ==================================================
 echo.
 echo.
-echo Èç¹û¿´¼û new state: disabled-user ×ÖÑù¼´Îª³É¹¦¡£
+echo å¦‚æžœçœ‹è§ new state: disabled-user å­—æ ·å³ä¸ºæˆåŠŸã€‚
 echo.
-echo È»ºó¾¡ÇéÏíÊÜ°É~£¨ÍòÄÜÒ£¿ØÐ§¹ûÃ÷ÏÔ£©
+echo ç„¶åŽå°½æƒ…äº«å—å§~ï¼ˆä¸‡èƒ½é¥æŽ§æ•ˆæžœæ˜Žæ˜¾ï¼‰
 echo.
-echo °´ÏÂÈÎÒâ¼üÍË³ö
+echo æŒ‰ä¸‹ä»»æ„é”®é€€å‡º
 pause>nul
 exit
