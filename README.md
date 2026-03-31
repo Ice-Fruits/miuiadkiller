@@ -3,27 +3,7 @@
 #### 介绍
 顾名思义，去除miui所有自带广告
 
-一共卸载一下几个内置APP
-1.万恶的msa
-com.miui.systemAdSolution
-2.音乐
-com.miui.player
-3.游戏中心
-com.xiaomi.gamecenter
-4.内容中心
-com.miui.newhome
-5.万象息屏
-com.miui.aod 
-
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+卸载系统内置APP，根据需要可以自行增加删除
 
 #### 使用说明
 
