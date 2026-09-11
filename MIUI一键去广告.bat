@@ -43,7 +43,7 @@ ECHO  MIUI ÔÚºÜ¶àµØ·½¼ÓÁË¹ã¸æ(±ÈÈç¿ª»ú¶¯»­Ê±£¬±ÈÈç×÷Òµ°ï)£¬ÓĞĞ©ÊÇ¿ÉÒÔ¹Ø±ÕµÄ£¬µ«Ó
 echo.
 echo  ¹Ø±Õ²»ÁËµÄ¹ã¸æ´ó²¿·ÖÊÇmsaÍÆËÍµÄ£¬Òò´ËÎÒÃÇ°ÑËüÉ¾µô¡£
 echo.
-echo  ×¢Òâ£ºÄ¿Ç°(2026.3.31)»¹Ã»ÓĞÉ¾³ıÒÔºó¿¨Ã×ÏÖÏó£¬²»±£Ö¤ÒÔºóÃ»ÓĞ¡£
+echo  ×¢Òâ£ºÄ¿Ç°(2026.9.11)»¹Ã»ÓĞÉ¾³ıÒÔºó¿¨Ã×ÏÖÏó£¬²»±£Ö¤ÒÔºóÃ»ÓĞ¡£
 ECHO.
 ECHO. Ê×ÏÈÎÒÃÇĞèÒªÖØÆôadb·şÎñ
 ECHO.
@@ -138,6 +138,8 @@ adb shell pm uninstall --user 0 com.miui.carlink
 adb shell pm uninstall --user 0 com.miui.misightservice
 ::ÏµÍ³ºóÌ¨·şÎñ
 adb shell pm uninstall --user 0 com.miui.daemon
+::ÏµÍ³°²È«×é¼ş
+adb shell pm uninstall --user 0 com.miui.guardprovider
 
 echo.
 echo ==================================================
