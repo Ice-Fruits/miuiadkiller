@@ -122,7 +122,7 @@ adb shell pm uninstall --user 0 com.android.healthconnect.controller
 adb shell pm uninstall --user 0 com.xiaomi.mirror
 ::浏览器
 adb shell pm uninstall --user 0 com.android.browser
-::支付
+::米币支付
 adb shell pm uninstall --user 0 com.xiaomi.payment
 ::小米互联通信服务
 adb shell pm uninstall --user 0 com.xiaomi.mi_connect_service
@@ -140,6 +140,8 @@ adb shell pm uninstall --user 0 com.miui.misightservice
 adb shell pm uninstall --user 0 com.miui.daemon
 ::系统安全组件
 adb shell pm uninstall --user 0 com.miui.guardprovider
+::小游戏服务
+adb shell pm uninstall --user 0 com.xiaomi.minigame
 
 echo.
 echo ==================================================
